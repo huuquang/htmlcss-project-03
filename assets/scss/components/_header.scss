@@ -1,0 +1,66 @@
+/*=============== HEADER ===============*/
+.header {
+	padding-top: 30px;
+	position: sticky;
+	top: -30px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: var(--first-color);
+	&-actions {
+		display: flex;
+		align-items: center;
+		column-gap: 28px;
+		&__login {
+			color: var(--text-color-light);
+			font-size: var(--small-font-size);
+			font-weight: var(--font-light);
+		}
+		&__signup {
+			--height: 44px;
+			min-width: 104px;
+		}
+	}
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: var(--header-height);
+	&__list {
+		display: flex;
+		column-gap: 26px;
+	}
+	&__link {
+		color: var(--text-color-light);
+		font-size: var(--small-font-size);
+		padding: 4px 8px;
+		&:hover {
+			color: var(--text-white-color);
+			text-shadow: 1px 0 0 currentColor;
+		}
+	}
+}
+
+/* Active link */
+.active-link {
+	position: relative;
+	color: var(--text-white-color);
+	text-shadow: 1px 0 0 currentColor;
+	&::before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: -8px;
+		width: 6px;
+		transform: translateY(-50%);
+		height: 6px;
+		border-radius: 50%;
+		background-color: var(--text-white-color);
+	}
+}
+/* Change background header */
+.scroll-header {
+	border-bottom: 3px solid var(--first-color-light);
+}

@@ -1,0 +1,18 @@
+/*=============== BUTTONS ===============*/
+.button {
+	--height: 60px;
+	display: inline-block;
+	min-width: 205px;
+	height: var(--height);
+	padding: 0 20px;
+	background-color: var(--first-color-light);
+    color: var(--text-white-color);
+	border-radius: 999px;
+    text-align: center;
+    line-height: var(--height);
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-regular);
+	&:hover{
+		opacity: .9;
+	}
+}
