@@ -6,13 +6,34 @@
 	height: var(--height);
 	padding: 0 20px;
 	background-color: var(--first-color-light);
-    color: var(--text-white-color);
+	color: var(--text-white-color);
 	border-radius: 999px;
-    text-align: center;
-    line-height: var(--height);
+	border: 1px solid var(--first-color-light);
+	text-align: center;
+	line-height: var(--height);
 	font-size: var(--normal-font-size);
 	font-weight: var(--font-regular);
-	&:hover{
-		opacity: .9;
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+.control {
+	display: flex;
+	column-gap: 18px;
+	&__btn {
+		width: 36px;
+		height: 36px;
+		border: 1px solid #575f66;
+		border-radius: 50%;
+		background: #fff;
+		color: #575f66;
+		transition: 0.25s ease-in;
+		cursor: pointer;
+		&:hover {
+			background: var(--first-color-light);
+			border-color: var(--first-color-light);
+			color: var(--text-white-color);
+		}
 	}
 }

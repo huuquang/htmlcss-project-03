@@ -1,22 +1,22 @@
 /*=============== SCROLL UP ===============*/
 .scrollup {
 	position: fixed;
-	background-color: var(--first-color);
-	right: 1.6rem;
+	background-color: var(--first-color-light);
+	right: 26px;
 	bottom: -20%;
-	z-index: var(--z-tooltip);
+	z-index: 100;
 	display: inline-flex;
-	padding: 0.5rem;
+	padding: 10px;
 	border-radius: 50%;
 	opacity: 0.7;
 	transition: 0.4s;
 	&:hover {
-		background-color: var(--first-color);
+		background-color: var(--first-color-light);
 		opacity: 1;
 	}
 	&__icon {
 		color: var(--title-color);
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 }
 
@@ -28,13 +28,13 @@
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
 	width: 1rem;
-    border-radius: 0.8rem;
-    background-color: var(--scroll-bar-color);
-    &-thumb{
-        background-color: var(--scroll-thumb-color);
-        border-radius: 0.8rem;
-        &:hover{
-            background-color: var(--text-color-light);
-        }
-    }
+	border-radius: 0.8rem;
+	background-color: var(--scroll-bar-color);
+	&-thumb {
+		background-color: var(--scroll-thumb-color);
+		border-radius: 0.8rem;
+		&:hover {
+			background-color: var(--text-color-light);
+		}
+	}
 }

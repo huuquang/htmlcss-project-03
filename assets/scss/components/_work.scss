@@ -1,0 +1,41 @@
+/*=============== WORK ===============*/
+.work {
+	padding: 100px 0;
+	background: #f6fbff;
+	&__list {
+		margin-top: 70px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+	}
+	&-item {
+		background: #fff;
+		border: 16px solid #eaf6ff;
+		padding: 43px 42px;
+		border-radius: 4px;
+		transition: 0.2s ease-in;
+		&:hover {
+			border-color: var(--first-color-light);
+			transform: translateY(-16px);
+		}
+		&:hover &__more {
+			color: var(--first-color-light);
+		}
+		&__subtitle {
+			margin-top: 18px;
+			font-size: var(--h3-big-font-size);
+		}
+		&__desc {
+			margin-top: 28px;
+			font-size: var(--small-font-size);
+			line-height: 1.75;
+		}
+		&__more {
+			display: inline-block;
+			margin-top: 18px;
+			font-weight: var(--font-regular);
+			font-size: var(--small-font-size);
+			color: var(--text-color);
+		}
+	}
+}

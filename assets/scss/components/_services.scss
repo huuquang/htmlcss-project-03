@@ -1,0 +1,59 @@
+/*=============== SERVICES ===============*/
+.services {
+	&__desc {
+		text-align: center;
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 70px;
+	}
+	&__img {
+		width: 570px;
+		height: 570px;
+		border-radius: 12px;
+		object-fit: cover;
+	}
+	&__list {
+		margin-bottom: 55px;
+	}
+}
+
+.services-item {
+	display: flex;
+	align-items: center;
+	column-gap: 19px;
+	padding: 20px 22px;
+	width: 470px;
+	border-radius: 10px;
+	border-radius: 10px;
+	&:hover {
+		background: #fff;
+		box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+	}
+	&:hover &__icon {
+		background: var(--first-color-light);
+		color: #fff;
+	}
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 60px;
+		height: 60px;
+		background: #eff6fd;
+		color: var(--first-color);
+		border-radius: 50%;
+	}
+	&__subtitle {
+		font-size: var(--h3-normal-font-size);
+	}
+	&__desc {
+		font-size: var(--small-font-size);
+        line-height: 1.75;
+		margin-top: 8px;
+
+	}
+}

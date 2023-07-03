@@ -1,0 +1,33 @@
+/*=============== INSTALL ===============*/
+.install {
+	&__container {
+		display: flex;
+		align-items: center;
+		padding: 0 70px;
+		border-radius: 4px;
+		background: #2e80ce;
+		column-gap: 160px;
+	}
+	&__img {
+		display: block;
+		width: 284px;
+		height: 522px;
+		object-fit: cover;
+		margin-top: -95px;
+	}
+	&__title {
+		max-width: 489px;
+		color: var(--text-white-color);
+	}
+	&__desc {
+		color: var(--text-white-color);
+		line-height: 1.6;
+	}
+	&__row {
+		margin-top: 38px;
+		display: flex;
+		column-gap: 28px;
+	}
+	&__btn-img {
+	}
+}

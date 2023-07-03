@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sora:wght@300;400;500;600&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
 	--header-height: 7.2rem;
@@ -24,21 +24,22 @@
 	--biggest-font-size: 7rem;
 	--h2-font-size: 5rem;
 	--h3-big-font-size: 2.6rem;
+	--h3-normal-font-size: 1.8rem;
 	--h3-small-font-size: 1.6rem;
 	--normal-font-size: 1.8rem;
 	--small-font-size: 1.6rem;
 	--smaller-font-size: 1.4rem;
 
 	// Responsive typography
-	@media screen and (max-width: 967.98px) {
-		--biggest-font-size: 4.8rem;
-		--h2-font-size: 3.2rem;
-		--h3-big-font-size: 2rem;
-		--h3-small-font-size: 1.5rem;
-		--normal-font-size: 1.5rem;
-		--small-font-size: 1.4rem;
-		--smaller-font-size: 1.3rem;
-	}
+	// @media screen and (max-width: 967.98px) {
+	// 	--biggest-font-size: 4.8rem;
+	// 	--h2-font-size: 3.2rem;
+	// 	--h3-big-font-size: 2rem;
+	// 	--h3-small-font-size: 1.5rem;
+	// 	--normal-font-size: 1.5rem;
+	// 	--small-font-size: 1.4rem;
+	// 	--smaller-font-size: 1.3rem;
+	// }
 
 	/*========== Font weight ==========*/
 	--font-light: 300;

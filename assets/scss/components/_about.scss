@@ -1,0 +1,30 @@
+/*=============== ABOUT ===============*/
+.about {
+	&__container {
+		display: flex;
+		align-items: center;
+		column-gap: 130px;
+	}
+	&__images {
+		display: flex;
+		position: relative;
+		padding: 0 58px 121px 0;
+	}
+	&__img {
+		width: 512px;
+		height: 370px;
+		object-fit: cover;
+		border-radius: 6px;
+		&:last-child {
+			position: absolute;
+			top: 121px;
+			left: 238px;
+			width: 332px;
+			height: 370px;
+		}
+	}
+	&__desc {
+		margin-bottom: 38px;
+		line-height: 1.6;
+	}
+}

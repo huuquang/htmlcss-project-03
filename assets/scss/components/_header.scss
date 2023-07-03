@@ -1,12 +1,13 @@
 /*=============== HEADER ===============*/
 .header {
-	padding-top: 30px;
+	padding-top: 16px;
 	position: sticky;
-	top: -30px;
+	top: -16px;
 	left: 0;
 	width: 100%;
 	z-index: 10;
 	background-color: var(--first-color);
+	transition: .3s;
 	&-actions {
 		display: flex;
 		align-items: center;
@@ -14,7 +15,6 @@
 		&__login {
 			color: var(--text-color-light);
 			font-size: var(--small-font-size);
-			font-weight: var(--font-light);
 		}
 		&__signup {
 			--height: 44px;
@@ -47,6 +47,7 @@
 	position: relative;
 	color: var(--text-white-color);
 	text-shadow: 1px 0 0 currentColor;
+	transition: .5s;
 	&::before {
 		content: "";
 		display: inline-block;

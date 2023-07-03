@@ -1,7 +1,52 @@
 /*=============== HERO ===============*/
 .hero {
-    padding: 76px 0 110px;
-	margin-bottom: 85px;
-	height: calc(100vh - 102px);
+	padding: 62px 0 110px;
+	height: calc(100vh - 88px);
 	background-color: var(--first-color);
+	&__container {
+		grid-template-columns: 44% 1fr;
+		column-gap: 113px;
+		align-items: center;
+	}
+	&__title {
+		color: var(--text-white-color);
+		font-size: 7rem;
+		font-weight: var(--font-semi-bold);
+		line-height: 1.14;
+		letter-spacing: -1.4px;
+	}
+	&__desc {
+		margin-top: 22px;
+		color: var(--text-color-light);
+		line-height: 1.6;
+	}
+	&__row {
+		display: flex;
+		column-gap: 38px;
+		align-items: center;
+		margin-top: 38px;
+	}
+	&__phone {
+		color: var(--text-white-color);
+		font-weight: var(--font-regular);
+	}
+	&__images {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	&__img {
+		width: 330px;
+		height: 540px;
+		border-radius: 6px;
+		object-fit: cover;
+		&:first-child {
+			position: relative;
+			margin-right: -6px;
+		}
+		&:last-child {
+			width: 210px;
+			height: 410px;
+		}
+	}
 }
